@@ -12,7 +12,7 @@ import { RegisterManagerAfterVerifiedComponent } from './account/register manage
 import { EmailVerificationSuccess } from './account/email-verification-success/email-verification-success.Component';
 import { RegisterConfirmEmailUserComponent } from './account/register confirm email user/RegisterConfirmEmailuserComponent';
 import { ForgetPasswordComponent } from './account/forget-password/forget-password.component';
-import { ForgetPasswordconfirmemailComponent } from './account/forget-password confirm email/forget-password-confirm-email.component';
+import { ForgetPasswordconfirmemailComponent } from './account/forget-password-confirm-email/forget-password-confirm-email.component';
 import { CreateNewPasswordComponent } from './account/create new password/create-new-password.component';
 import { ProfileComponent } from './account/profile/profile.component';
 import { ContactComponent } from './account/contact/contact.component';
