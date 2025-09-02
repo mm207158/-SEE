@@ -1,0 +1,164 @@
+<app-header-three [themeLogo]="themeLogo"></app-header-three>
+
+<!-- Home slider start-->
+<!-- <section class="p-0">
+  <app-slider 
+    [sliders]="sliders" 
+    [textClass]="'text-center'"
+    [category]="'accessories'"
+    [buttonClass]="'black-btn'"
+    [buttonText]="'shop now'"> 
+  </app-slider>
+</section> -->
+<!-- Home slider End -->
+<div class="Top-banner">
+  <img src="../../../../assets/images/Proj images/Eyeglasses-Sunglasses-Banner-all-1-1536x384-1-1024x256.jpg" alt="">
+</div>
+<!-- Categories start-->
+
+
+<!-- categories End -->
+
+<!-- about section-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="title3">
+                    <h4>about us</h4>
+                    <h2 class="title-inner3">welcome to SEE store</h2>
+                    <div class="line"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+
+
+<!-- collection banner start -->
+<section class="p-0">
+  <div class="container-fluid">
+      <div class="row category-border">
+          <div class="col-sm-4 border-padding" *ngFor="let collection of collections2">
+              <div class="category-banner">
+                  <div>
+                      <img [src]="collection.image" class="img-fluid" alt="">
+                  </div>
+                  <div class="category-box">
+                      <a [routerLink]="['/shop/collection/left/sidebar']"
+                         [queryParams]="{ category: 'accessories'}">
+                          <h2>{{collection.title}}</h2>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- collection banner End -->
+
+
+
+<!-- product slider end -->
+
+<!--  tab section  -->
+<section class="section-b-space">
+  <div class="container">
+      <div class="title4">
+          <h2 class="title-inner4">accessories</h2>
+          <div class="line">
+              <span></span>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4" *ngFor="let accessory of accessories">
+              <div class="theme-card center-align">
+                  <div class="product-box">
+                      <!-- <div class="product-img">
+                         
+                          <img class="img-fluid" [src]="accessory.pictureUrl" alt="accessory Image">
+                      </div> -->
+                      <div class="product-img" [routerLink]="['/home/producdetails/', accessory.id]">
+                        <img class="img-fluid" [src]="accessory.pictureUrl" alt="accessory Image">
+
+                        <!--
+                          [src]="getDefaultImage(accessory)
+                          [src]="accessory.pictureUrl
+                         -->
+                    </div>
+                      <div class="product-caption">
+                          <h4 class="proname">{{ accessory.productName }}</h4>
+                          <p class="prodesc">{{ accessory.description }}</p>
+                          <div class="price">
+                              {{ accessory.price | currency: 'USD' }}
+                          </div>
+                          <!-- Add other properties as needed -->
+                          <!-- <a href="javascript:void(0)" title="Add to Wishlist" (click)="addToWishlist(accessory)">
+                            <i class="ti-heart" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0)" title="Add to cart" (click)="addToCart(accessory)"
+                        *ngIf="!cartModal">
+                        <i class="ti-shopping-cart"></i>
+                      </a>
+                      <a href="javascript:void(0)" title="Compare" (click)="addToCompare(accessory)">
+                        <i class="ti-reload" aria-hidden="true"></i>
+                      </a> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--  tab section end -->
+
+
+<!-- Tab product start-->
+<div class="title1 section-t-space">
+  <h4>exclusive products</h4>
+  <h2 class="title-inner1">special products</h2>
+</div>
+<section class="section-b-space p-t-0">
+  <div class="container">
+    <div class="row">
+      <div class="col theme-tab">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="tabs tab-title justify-content-center nav nav-pills" >
+          <li *ngFor="let collection of productCollections" [ngbNavItem]="collection">
+            <a ngbNavLink>
+               {{ collection }}
+            </a>
+            <ng-template ngbNavContent>
+              <div class="no-slider row">
+                  <ng-container *ngFor="let product of getCollectionProducts(collection) | slice:0:4">
+                      <div class="product-box">
+                          <app-product-box-three [product]="product" [currency]="productService?.Currency">
+                          </app-product-box-three>
+                      </div>
+                  </ng-container>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Tab product End -->
+
+
+<!-- service -->
+<div class="container">
+    <section class="service border-section small-section border-top-0">
+      <app-services></app-services>
+    </section>
+</div>
+<!-- service end -->
+
+
+
+
+<app-footer-three [themeLogo]="themeLogo" [subFooter]="true"></app-footer-three>

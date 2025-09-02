@@ -1,0 +1,52 @@
+<app-header-one></app-header-one>
+<!-- section start -->
+<body class="sobhi">
+  <div class="container" id="container">
+    <div class="form-container sign-in">
+      <br />
+      <br />
+      <div class="photo-container">
+        <img
+          *ngIf="image"
+          [src]="'data:image/jpg;base64,' + image.imageBase64"
+          alt="Uploaded Photo"
+          class="uploaded-photo"
+        />
+        <div *ngIf="!image" class="uploaded-photo-placeholder">
+          The uploaded photo will appear here
+          <i class="fas fa-upload upload-icon"></i>
+        </div>
+      </div>
+      <div class="Upbut">
+        <!-- Button to trigger file input -->
+        <button (click)="triggerFileInput()">
+          Upload Photo <i class="fas fa-upload upload-icon"></i>
+        </button>
+        <!-- Hidden file input -->
+        <input
+          class="upload-photo"
+          type="file"
+          id="upload-photo"
+          style="display: none"
+          accept="image/*"
+          (change)="applyGlass($event)"
+        />
+      </div>
+      <!-- <button class="back" id="Login" [routerLink]="['/pages/try-on']">
+        Back
+      </button> -->
+    </div>
+  </div>
+
+  <!-- Display loading, success, or failure status -->
+  <div *ngIf="status === 'Loading'">Loading...</div>
+  <div *ngIf="status === 'Success'">Glass applied successfully!</div>
+  <div *ngIf="status === 'Failure'">Failed to apply glass.</div>
+  <div *ngIf="status === 'Failure'">
+    <div>Error: {{ errorMessage }}</div>
+  </div>
+</body>
+<!--Section ends-->
+
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

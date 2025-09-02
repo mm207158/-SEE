@@ -1,0 +1,31 @@
+<app-header-one [sticky]="true"></app-header-one>
+<!-- section start -->
+<body class="sobhi">
+    <div class="container" id="container">
+        <div class="image-container">
+            <img class="image" [src]="images[currentImageIndex].src" alt="Vision Test Image">
+        </div>
+        <div class="vision-test-container">
+            <div *ngIf="currentImageIndex < totalQuestions">
+               
+                <div class="direction-buttons">
+                    <button class="up" (click)="nextImage('up')"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                    <button class="down" (click)="nextImage('down')"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+                    <button class="left" (click)="nextImage('left')"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+                    <button class="right" (click)="nextImage('right')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                </div>
+                <div *ngIf="currentImageIndex == 25" class="cover-other-eye-message">
+                  <p class="cover-other-eye">Cover the other Eye</p>
+              </div>
+                <p>If you couldn't determine the direction, please</p>
+                <a class="forgetpassword" [routerLink]="['/pages/forget/password']">Click here</a>
+                <div class="counter">
+                    {{currentImageIndex + 1}} / {{totalQuestions}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Section ends -->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

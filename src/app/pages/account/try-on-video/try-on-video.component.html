@@ -1,0 +1,35 @@
+<app-header-one></app-header-one>
+
+<!-- section start -->
+<body class="sobhi">
+  <div class="container" id="container">
+    <div class="form-container sign-in">
+      <form>
+        <h3>Upload a video <i class="fas fa-upload"></i></h3>
+        <br>
+        <div class="bordervid">
+          <div class="uploaded-video-placeholder" *ngIf="!selectedVideo">
+            The uploaded video will appear here
+            <i class="fas fa-upload upload-icon"></i>
+          </div>
+          <video #videoPlayer *ngIf="selectedVideo" controls>
+            <source [src]="videoUrl" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="Upbut">
+          <button (click)="triggerFileInput()">Upload Video <i class="fas fa-upload upload-icon"></i></button>
+          <input type="file" id="upload-video" style="display: none" accept="video/*" (change)="onFileSelected($event)">
+        </div>
+        <div *ngIf="status === 'Loading'">Loading...</div>
+        <div *ngIf="status === 'Success'">Success</div>
+        <div *ngIf="status === 'Failure'">Failed to apply glasses.</div>
+        <div *ngIf="status === 'Failure'"><div class>Error: {{ errorMessage }}</div></div>
+      </form>
+    </div>
+  </div>
+</body>
+<!--Section ends-->
+
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

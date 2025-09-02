@@ -1,0 +1,29 @@
+<div
+  class="collection-collapse-block"
+  [class.open]="collapse"
+  *ngIf="size.length"
+>
+  <h3 class="collapse-block-title" (click)="collapse = !collapse">Size</h3>
+  <div class="collection-collapse-block-content">
+    <div class="color-selector">
+      <div class="collection-brand-filter">
+        <div
+          class="custom-control custom-checkbox collection-filter-checkbox"
+          *ngFor="let size of size"
+        >
+          <input
+            type="checkbox"
+            [value]="size.id"
+            [checked]="checked(size.id)"
+            [id]="size.id"
+            (change)="appliedFilter($event)"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="{{ size.id }}">{{
+            size.sizeName
+          }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+.img-fluid {
+    max-width: 33%;
+    height: 140px;
+}
+
+
+.template-password #container #login .theme-form h3, .template-password #container #login .theme-form .h3 {
+    color: #090909;
+    font-size: 32px;
+}
+
+.template-password #container #login .theme-form input {
+    border-color: #dddddd;
+    font-size: 12px;
+    padding: 17px 25px;
+    margin-bottom: 15px;
+    height: inherit;
+    border-radius: 34px;
+}
+
+.template-password #container #login .theme-form input {
+    border-color: #dddddd;
+    font-size: 12px;
+    padding: 18px 24px;
+    margin-top: 25px;
+    margin-bottom: 33px;
+    height: inherit;
+    border-radius: 34px;
+}
+
+.btn-solid {
+    padding: 13px 29px;
+    color: #ffffff !important;
+    letter-spacing: 0.05em;
+    border: 2px solid var(--theme-deafult) !important;
+    background-color: #4aa7b9;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transition: background 300ms ease-in-out;
+    border-radius: 10px;
+}
+
+#login .mt-4 #owner{
+   font-size: medium;
+   font-weight: 800;
+}
+
+.template-password #container #login .theme-form input {
+    border-color: #dddddd;
+    font-size: 20px;
+    padding: 18px 24px;
+    margin-top: 25px;
+    margin-bottom: 33px;
+    height: inherit;
+    border-radius: 34px;
+}

@@ -1,0 +1,17 @@
+<app-header-two [sticky]="true" *ngIf="url != '/pages/comingsoon'"></app-header-two>
+
+<!-- section start -->
+<body class="sobhi">
+    <div class="container" id="container">
+        <i class="fa-solid fa-circle-check"></i>
+        <P> Your Email has been Verified successfully</P>
+        <button class="next" id="Login" [routerLink]="['/pages/login']">Done</button>
+
+    
+
+    </div> 
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

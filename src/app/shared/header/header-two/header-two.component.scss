@@ -1,0 +1,79 @@
+.top-header{
+    background-color: rgb(122, 208, 208);
+
+}
+p{
+    color: #1654a9; ;
+}
+.header-contact .text{
+    color: #1654a9;
+  
+}
+.header-dropdown li{
+    color: #1654a9;
+
+}
+.header-dropdown li a i{
+  color: #1654a9;
+  transition: all 0.5s ease;
+}
+
+.sticky {
+    position: relative;
+    transition: top 0.3s ease; /* Add smooth transition for better user experience */
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index value as needed */
+  }
+  .compare li{
+    color: #1654a9;
+
+  }
+  .sticky {
+    position: relative;
+    transition: top 0.3s ease; 
+    position: relative;
+    transition: top 0.3s ease;
+    height: 152px;
+    margin-bottom: 3px;
+    }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index value as needed */
+    height: 5%;
+  }
+  
+
+ .main-menu{
+    background-color: #ed0b0b;
+    display:inline;
+  }
+  
+  .absolute-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -19%;
+    height: 88%;
+
+  }
+  
+
+.brand-logo {
+    position: relative; /* Ensure relative positioning for child elements */
+    display: inline-block; /* Ensures the container only takes the width of its content */
+}
+
+.brand-logo img {
+    width: 150px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+

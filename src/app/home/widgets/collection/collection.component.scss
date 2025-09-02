@@ -1,0 +1,11 @@
+.btn-outline {
+    display: inline-block;
+    padding: 13px 29px;
+    letter-spacing: 0.05em;
+    border: 2px solid rgba(5, 218, 255, 0.885);
+    position: relative;
+    color: #000000;
+}
+.btn-outline::after{
+    background-color:  rgba(5, 218, 255, 0.885);
+}

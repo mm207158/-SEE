@@ -1,0 +1,131 @@
+<body class="sobhi">
+  <div class="container" id="container">
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-right">
+          <h1>
+            Hey Manager!<br />
+            Welcome
+          </h1>
+          <p>
+            Enter the requested Information to Verify it's Yours before signing
+            up
+          </p>
+          <button class="hidden" id="Login" [routerLink]="['/pages/login']">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container sign-in mt-5 pt-5">
+      <form class="mt-5" #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <h3>Create Account</h3>
+        <input
+          type="text"
+          placeholder="First Name"
+          id="firstName"
+          ngModel
+          #firstName="ngModel"
+          required
+          name="firstName"
+        />
+        <input
+          type="text"
+          id="lastName"
+          ngModel
+          #lastName="ngModel"
+          required
+          name="lastName"
+          placeholder="Last Name"
+        />
+        <input
+          type="email"
+          id="email"
+          ngModel
+          #email="ngModel"
+          required
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          id="password"
+          ngModel
+          #password="ngModel"
+          required
+          name="password"
+          placeholder="Password"
+        />
+        <input
+          type="text"
+          placeholder="Store Name"
+          id="storeName"
+          ngModel
+          #storeName="ngModel"
+          required
+          name="storeName"
+        />
+        <input
+          type="text"
+          placeholder="Business Location"
+          id="businessLocation"
+          ngModel
+          #businessLocation="ngModel"
+          required
+          name="businessLocation"
+        />
+        <input
+          type="number"
+          placeholder="Card Number"
+          id="cardNumber"
+          ngModel
+          #cardNumber="ngModel"
+          required
+          name="cardNumber"
+        />
+        <input
+          type="text"
+          placeholder="Holder Name"
+          id="holderName"
+          ngModel
+          #holderName="ngModel"
+          required
+          name="holderName"
+        />
+        <input
+          type="text"
+          placeholder="Enter a valid expiry date (MM/YYYY)"
+          pattern="\d{4}-\d{2}"
+          id="expireOnDate"
+          ngModel
+          #expireOnDate="ngModel"
+          required
+          name="expireOnDate"
+        />
+        <input
+          type="number"
+          placeholder="CSV"
+          id="csv"
+          ngModel
+          #csv="ngModel"
+          required
+          name="csv"
+        />
+
+        <button type="submit">
+          Save
+        </button>
+        <span class="or">or continue with</span>
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,27 @@
+<div
+  class="collection-collapse-block mb-4"
+  [class.open]="collapse"
+  *ngIf="categories.length"
+>
+  <h3 class="collapse-block-title" (click)="collapse = !collapse">Catogary</h3>
+  <div class="collection-collapse-block-content">
+    <div class="collection-brand-filter">
+      <div
+        class="custom-control custom-checkbox collection-filter-checkbox"
+        *ngFor="let category of categories; let i = index"
+      >
+        <input
+          type="checkbox"
+          [value]="category.id"
+          [checked]="checked(category.id)"
+          [id]="category.id"
+          (change)="appliedFilter($event)"
+          class="custom-control-input"
+        />
+        <label class="custom-control-label" for="{{ category.id }}">{{
+          category.categoryName
+        }}</label>
+      </div>
+    </div>
+  </div>
+</div>

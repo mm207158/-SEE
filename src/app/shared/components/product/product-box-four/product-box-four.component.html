@@ -1,0 +1,48 @@
+
+<div class="img-wrapper">
+  
+    <div class="img-block">
+      <a href="javascript:void(0)" title="Add to Wishlist" (click)="addToWishlist(product)">
+        <i class="ti-heart" aria-hidden="true"></i>
+      </a>
+        <div class="front">
+            <a [routerLink]="['/shop/product/left/sidebar/', product.title.replace(' ', '-')]">
+                <img  
+                [lazyLoad]="ImageSrc ? ImageSrc : images[1].src" 
+                class="img-fluid lazy-loading" 
+                alt="{{ images[1].alt }}" />
+            </a>
+        </div>
+        <div class="back" *ngIf="onHowerChangeImage">
+            <a [routerLink]="['/shop/product/left/sidebar/', product.title.replace(' ', '-')]">
+                <img [src]="ImageSrc ? ImageSrc : images[1].src" class="img-fluid lazy-loading" alt="{{ images[1].alt }}">
+            </a>
+        </div>
+        <div class="cart-info">
+            <button title="Add to cart" (click)="CartModal.openModal(product)" 
+                *ngIf="cartModal">
+                <i class="ti-shopping-cart"></i>
+            </button>
+            <button title="Add to cart" (click)="addToCart(product)"
+                *ngIf="!cartModal">
+                <i class="ti-shopping-cart"></i>
+            </button>
+            <a href="javascript:void(0)" title="Add to Wishlist" (click)="addToWishlist(product)">
+              <i class="ti-heart" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0)" title="Quick View" (click)="QuickView.openModal()">
+              <i class="ti-search" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0)" title="Compare" (click)="addToCompare(product)">
+              <i class="ti-reload" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <a [routerLink]="['/pages/try-on']" class="btn btn-solid btn-sm">Try On</a>
+
+  </div>
+
+  <app-quick-view #quickView [product]="product" [currency]="currency"></app-quick-view>
+  <app-cart-modal #cartModal [product]="product" [currency]="currency" *ngIf="cartModal"></app-cart-modal>
+  
+  

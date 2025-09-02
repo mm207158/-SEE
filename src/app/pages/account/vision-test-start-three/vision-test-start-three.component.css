@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.sobhi{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right,#e2e2e2,#c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../../../../assets/images/Proj images/Back ground for vision tes.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 35);
+    position: relative;
+    overflow: hidden;
+    width: 873px;
+    max-width: 100%;
+    min-height: 480px;
+    
+
+}
+
+.container p{
+    font-size: large;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+    color: #080808;
+    text-align-last: center;
+
+}
+.container span{
+    font-size: 12px;
+}
+.container a{
+    color: #1a89afe0;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+    position: relat
+}
+#Login{
+    background-color: #14ada5ab;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 21%;
+}
+#Register{
+    background-color: #176B87;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 11px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 191px;
+}
+.container button.hidden{
+ border-color: #fff;   
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.up{
+    background: unset;
+    border: #fafafa;
+    border-radius: 88px;
+    font-size: 63px;
+    color: #33beca;
+    position: relative;
+    bottom: 394px;
+    left: 15%;
+}
+
+.down{
+    background: unset;
+    border: #fafafa;
+    border-radius: 88px;
+    font-size: 63px;
+    color: #33beca;
+    position: relative;
+    left: 5%;
+    top: 13px;
+}
+.left{
+    background: unset;
+    border: #fafafa;
+    border-radius: 88px;
+    font-size: 63px;
+    position: relative;
+    color: #33beca;
+    right: 31%;
+    bottom: 189px;
+
+}
+
+.right{
+    background: unset;
+    border: #fafafa;
+    border-radius: 88px;
+    font-size: 63px;
+    position: relative;
+    color: #33beca;
+    left: 10%;
+    bottom: 190px;
+
+}
+
+.container input{
+    background-color: #eee;
+    border: #2486b7;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border-style: ridge;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all .06s ease-in-out;
+}
+
+
+/*Start of vision test css*/
+.vision-test-container {
+    text-align: center;
+    margin-top: 49%;
+  }
+  
+  .image-container {
+    width: 479px;
+    height: 300px;
+    position: absolute;
+    left: 32%;
+    top: 29px;
+    overflow: hidden;
+    align-content: center;
+    text-align: center;
+    background-color: #f8fffd;
+ }
+ p{
+    font: icon;
+    font-weight: 800;
+    font-size: 25px;
+    position: relative;
+    top: 15%;
+    color: #559799;
+ }
+img{
+    margin-top: 20px;
+    width: 360px;
+}
+
+  .direction-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .counter {
+    margin-top: 20px;
+    background-color: #509ab3;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+/*End of vision test css*/
+
+
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+
+    58%, 100%{
+        opacity: 1;
+        z-index: 5;
+
+    }
+}
+
+
+h2{
+    color: #4772b9;
+    font-size: 22px;
+    margin-bottom:20px;
+}
+
+
+
+h3{
+    font-weight: bold;
+    color: #3d71a3;
+}
+
+
+/*here is the icons CSS*/
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons .icon {
+    margin-right: 35px;
+  }
+  
+  .social-icons .icon:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+  }
+  
+  .social-icons .icon i {
+    font-size: 24px; /* Adjust icon size */
+    color: #1544de; /* Set icon color */
+    transition: color 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .social-icons .icon i:hover {
+    color: #4267B2; /* Change icon color on hover (Facebook blue) */
+  }
+  
+  /* Adjust styles for specific icons */
+  .social-icons .icon i.fa-google {
+    color: #DB4437; /* Google red color */
+  }
+  
+  .social-icons .icon i.fa-google:hover {
+    color: #EA4335; /* Change icon color on hover (slightly lighter red) */
+  }
+/*Ends here*/
+
+
+.or{
+    margin: 25px 0;
+    font-size: 10px;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+.or::before{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: -65%;
+    width: 60%;
+    height: 2px;
+    background-color: #bbb;
+}
+
+.or::after{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    width: 60%;
+    height: 2px;
+    background-color: #bbb;
+ }
+
+
+.toggle-container{
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6ss ease-in-out;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+
+    transform: translateX(-100%);
+    border-radius: 0 0 0 0;
+
+}
+.toggle{
+    background-color: #2da88f;
+    height: 100%;
+    background: linear-gradient(to right, #67acb6, #7be5e0); 
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out; 
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+  
+.toggle::before {
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    left: 24%;
+    width: 64%;
+    height: 92px;
+    background: url(../Images/wave3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(450deg);
+}
+
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    text-align: center;
+    top:0;
+    transform: translateX(0);
+    transition:all 0.6s ease-in-out;
+}
+.toggle-left{
+    transform:translateX(-200%)
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-left{
+    right:0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+
+.toggle h1{
+    color: #fff;
+    font-size: 25px;
+}
+
+.sign-in .decrip{
+    color: black;
+}
+
+
+
+

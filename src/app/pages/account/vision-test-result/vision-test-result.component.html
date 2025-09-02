@@ -1,0 +1,18 @@
+<app-header-one [sticky]="true" ></app-header-one>
+<!-- section start -->
+<body class="sobhi">
+    <div class="container" id="container">
+      <h1>Vision Test Results</h1>
+      <p>you passed {{   this.resultFraction }} correct!</p>
+      <p>{{ this.sightCondition }}</p>
+
+      <p>you passed {{ this.correctAnswers }} / {{ this.totalQuestions }} correct!</p>
+
+      <button class="repeat" [routerLink]="['/pages/vision-test']">Repeat Test</button>
+
+    </div> 
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

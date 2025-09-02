@@ -1,0 +1,157 @@
+<app-header-one [sticky]="true"></app-header-one>
+
+<!-- Home slider start-->
+<!-- <section class="p-0">
+  <app-slider 
+    [sliders]="sliders" 
+    [textClass]="'text-center'"
+    [category]="'fashion'"
+    [buttonText]="'shop now'">  -->
+
+    <!-- Add the blue circle background container inside the slider -->
+    <!-- <div class="blue-circle-container">
+      <div class="blue-circle"> <img src="../../../../assets/images/product/collection-sidebar-banner.png" alt="">        </div>
+    </div>
+     End of blue circle background container -->
+  <!-- </app-slider> -->
+<!-- </section> -->
+
+
+
+<div class="Top-banner">
+  <img src="../../../../assets/images/Proj images/Eyeglasses-Sunglasses-Banner-all-1-1536x384-1-1024x256.jpg" alt="">
+</div>
+
+
+<div class="title1 section-t-space">
+  <h4>Hello, there</h4>
+  <h2 class="title-inner1">Welcome to SEE</h2>
+</div>
+
+<!-- collection banner start-->
+<section class="pb-0">
+  <div class="container">
+    <div class="row partition2">
+      <div class="col-md-6" *ngFor="let collection of collections">
+        <a [routerLink]="['/shop/collection/left/sidebar']" [queryParams]="{ category: 'glasses'}">
+          <div class="collection-banner p-right text-center">
+            
+            <div class="circle-background">
+              <img [src]="collection.image" class="img-fluid" alt="collection-banner">
+            </div>
+             
+            <div class="contain-banner">
+              <div>
+                <h4>{{collection.save}}</h4>
+                <h2 class="colecname" >{{collection.title}}</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- collection banner End -->
+
+<!-- Product slider start-->
+<div class="title1 section-t-space">
+  <h4>special offer</h4>
+  <h2 class="title-inner1">top collection</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="product-para">
+        <p class="text-center">
+          SEE will make you have a good experiance in buying any glass and it's accessories
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section-b-space p-t-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+       
+        <div class="first-img">
+          <img src="../../../assets/images/Proj images/1.jpg" alt="">
+        </div>
+
+        <div class="third-img">
+          <img src="../../../assets/images/Proj images/1.jpg" alt="">
+        </div>
+
+        <div class="second-img">
+          <img src="../../../assets/images/Proj images/2.jpg" alt="">
+        </div>
+
+
+        
+        <!-- <owl-carousel-o class="product-m no-arrow" [options]="ProductSliderConfig">
+          
+          <ng-container class="first" *ngFor="let product of products | slice:0:1">
+            <ng-template carouselSlide>
+              <div class="product-box">
+                <app-product-box-one 
+                  [product]="product" 
+                  [currency]="productService?.Currency"
+                  [thumbnail]="true"
+                  [cartModal]="true">
+                </app-product-box-one>
+              </div>
+            </ng-template>
+          </ng-container>
+          <ng-container class="first" *ngFor="let product of products | slice:0:1">
+            <ng-template carouselSlide>
+              <div class="product-box">
+                <app-product-box-one 
+                  [product]="product" 
+                  [currency]="productService?.Currency"
+                  [thumbnail]="true"
+                  [cartModal]="true">
+                </app-product-box-one>
+              </div>
+            </ng-template>
+          </ng-container>
+          <ng-container class="second" *ngFor="let product of products | slice:0:1">
+            <ng-template carouselSlide>
+              <div class="product-box">
+                <app-product-box-one 
+                  [product]="product" 
+                  [currency]="productService?.Currency"
+                  [thumbnail]="true"
+                  [cartModal]="true">
+                </app-product-box-one>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Product slider End -->
+
+<!-- Parallax banner start-->
+<section class="p-0">
+  <div class="full-banner parallax-banner1 parallax text-center p-left"
+    [ngStyle]="{'background-image': 'url(assets/images/parallax/1.jpg)'}">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="banner-contain">
+            <h2>2024</h2>
+            <h3>Glasses trends</h3>
+            <h4>special offer</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Parallax banner End -->
+
+<app-footer-one></app-footer-one>
+

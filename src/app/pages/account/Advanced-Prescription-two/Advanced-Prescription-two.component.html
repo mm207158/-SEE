@@ -1,0 +1,53 @@
+<app-header-one></app-header-one>
+<!-- section start -->
+<body class="sobhi">
+
+
+
+    <div class="container" id="container">
+      <div class="progress-bar"></div>
+        <h3>Enter your prescription</h3>
+         <h4>We'll create a lens tailor-made to your vision needs.</h4>
+        <div class="select-container">
+            <li>
+              <div class="first">
+                <a routerLink="/pages/Prescription-two"> Fill in manually <br>
+                  <p>Enter your prescription manually</p>
+                </a>
+              </div>
+                <div class="second">
+                   <div> 
+                    <a routerLink="/saved-prescription"> Use Saved prescription <br>
+                      
+                      <p>Log in and select saved prescription from My account</p>                
+                    </a>
+                    </div> 
+                </div>
+            </li>
+
+            
+        </div>
+            
+    </div> 
+    
+<div class="prodcont">
+  <div class="col-md-4 center-slider" style="width: 100%;">
+    <div>
+        <div class="offer-slider">
+            <div>
+                <div class="product-box product-wrap" *ngFor="let product of products | slice:4:5">
+                  <app-product-box-three [product]="product"
+                          [currency]="productService?.Currency">
+                    </app-product-box-three>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+      <!-- Product slider End -->
+</body>
+<!--Section ends-->
+
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

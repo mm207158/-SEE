@@ -1,0 +1,20 @@
+.absolute-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+  
+  }
+  
+  
+  .brand-logo {
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  .brand-logo img {
+    width: 130px; 
+    height: auto; 
+}

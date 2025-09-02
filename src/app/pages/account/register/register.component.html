@@ -1,0 +1,87 @@
+<app-header-two
+  [sticky]="true"
+  *ngIf="url != '/pages/comingsoon'"
+></app-header-two>
+
+<!-- section start -->
+<body class="sobhi">
+  <div class="container" id="container">
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-right">
+          <h1>
+            Hey!<br />
+            Welcome
+          </h1>
+          <p>To keep connected with us Please Login your personal info</p>
+          <button class="hidden" id="Login" [routerLink]="['/pages/login']">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container sign-in">
+      <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <h3>Create Account</h3>
+        <br />
+        <input
+          type="text"
+          id="firstName"
+          ngModel
+          #firstName="ngModel"
+          required
+          name="firstName"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          id="lastName"
+          ngModel
+          #lastName="ngModel"
+          required
+          name="lastName"
+          placeholder="Last Name"
+        />
+        <input
+          type="email"
+          id="email"
+          ngModel
+          #email="ngModel"
+          required
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          id="password"
+          ngModel
+          #password="ngModel"
+          required
+          name="password"
+          placeholder="Password"
+        />
+        <br /><br />
+        <!-- <button class="hidden" id="Login" type="submit">sign-up</button> -->
+        <button class="hidden" id="Login" type="submit">sign-up</button>
+
+        <span class="or">or continue with</span>
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <i class="fab fa-google"></i>
+            <!-- Updated class for Google -->
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-facebook"></i>
+            <!-- Updated class for Facebook -->
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="Scripts/Script.js "></script>
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

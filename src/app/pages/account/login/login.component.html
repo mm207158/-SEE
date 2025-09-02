@@ -1,0 +1,102 @@
+<app-header-two
+  [sticky]="true"
+  *ngIf="url != '/pages/comingsoon'"
+></app-header-two>
+<!-- section start -->
+<body class="sobhi">
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form>
+        <h2>Create Account</h2>
+        <br />
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+
+        <br />
+        <span>or use your email for registration</span>
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <i
+              _ngcontent-serverapp-c2626171195=""
+              aria-hidden="true"
+              class="fa fa-google-plus"
+            ></i>
+          </a>
+          <a href="#" class="icon">
+            <i
+              _ngcontent-serverapp-c2626171195=""
+              aria-hidden="true"
+              class="fa fa-facebook"
+            ></i>
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container sign-in">
+      <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+     
+        <h2>Login to SEE</h2>
+        <br />
+        <input
+          type="email"
+          id="email"
+          ngModel
+          #email="ngModel"
+          required
+          name="email"
+          placeholder="Email or Phone"
+        />
+        <input
+          type="password"
+          id="password"
+          ngModel
+          #password="ngModel"
+          required
+          name="password"
+          placeholder="Password"
+        />
+        <a class="forgetpassword" [routerLink]="['/pages/forget/password']"
+          >Forgot your password?</a
+        >
+        <button id="Login" type="submit">Login</button>
+        <span class="or">or use your email password</span>
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <i class="fab fa-google"></i>
+            <!-- Updated class for Google -->
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-facebook"></i>
+            <!-- Updated class for Facebook -->
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello, Friend!</h1>
+          <p>Register with your personal details to use all of site features</p>
+          <button id="Login" [routerLink]="['/pages/register']">Sign up</button>
+          <button id="Register" [routerLink]="['/pages/register-manager']">
+            Sign up as manager
+          </button>
+
+        </div>
+      </div>
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Welcome Back!</h1>
+          <p>Enter your personal details to use all of site features</p>
+          <button class="hidden" id="Register">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

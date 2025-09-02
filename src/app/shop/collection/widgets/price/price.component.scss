@@ -1,0 +1,17 @@
+.ngx-slider {
+    .ngx-slider-selection {
+        background: #09d1df !important;
+    }
+    .ngx-slider-pointer {
+        width: 22px !important;
+        height: 22px !important;
+        top: -10px !important;
+        background-color: #09d1df !important;
+        &:after {
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            background-color:#09d1df !important;
+        }
+    }
+}

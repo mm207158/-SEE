@@ -1,0 +1,79 @@
+<app-header-one></app-header-one>
+
+<!-- section start -->
+<body class="sobhi">
+
+
+
+    <div class="container" id="container">
+      <!-- <div class="progress-bar"></div> -->
+        <h3>Choose your vision need</h3>
+         <h4>Choose lenses based on your vision need. If your prescription has an ADD value, you'll need progressive lenses.</h4>
+        <div class="select-container">
+            <li>
+              <div class="first">
+              <div class="photo">  
+                <img  src="../../../../assets/images/Lenses/rxc-icon-3d-types-single_vision_sun.png" alt=""></div>
+               <div>
+                
+
+                <a routerLink="/pages/Prescription-one"> Single Vision <br>
+                  <p>Near, intermediate or far-away vision correction.</p>
+
+                </a>
+              </div> 
+
+              </div>
+                <div class="second">
+                   <div class="phototwo">  <img  src="../../../../assets/images/Lenses/2rxc-icon-3d-types-progressive_multifocal_sun.png" alt=""></div>
+                   <div> 
+                    <a routerLink="/pages/Prescription-two">
+                      Progressive
+                      <p>Near, intermediate and far-away vision correction at the same time.</p>                
+                    </a>
+                    </div> 
+                </div>
+                <div class="third">
+                  <div class="photothree"> 
+                     <img  src="../../../../assets/images/Lenses/3rxc-icon-3d-types-frame_only_sun_op.png" alt=""></div>
+                  <div> 
+                    <a routerLink="/pages/Prescription-three">
+                     Biofical 
+                      <p> Your sunglasses without vision correction. Includes UV protection</p>
+                    </a>
+                  </div> 
+               </div>
+               
+               <a class="link" href="your_link_here" style="text-decoration: underline;">Add insurance benefits</a>
+               <span class="price" style="color: black;">FRAME PRICE: $171.00</span>
+
+            </li>
+
+            
+        </div>
+            
+    </div> 
+    
+      
+  <div class="prodcont">
+    <div class="col-md-4 center-slider" style="width: 100%;">
+      <div>
+          <div class="offer-slider">
+              <div>
+                  <div class="product-box product-wrap" *ngFor="let glass of products | slice:4:5">
+                    <app-product-box-three [product]="glass"
+                            [currency]="glass?.price">
+                      </app-product-box-three>
+                 </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+                
+      <!-- Product slider End -->
+</body>
+<!--Section ends-->
+
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

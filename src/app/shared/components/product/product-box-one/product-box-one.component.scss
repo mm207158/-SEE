@@ -1,0 +1,114 @@
+.section-b-space {
+    padding-bottom: 50px;
+    height: 525px;
+}
+ .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    height: 440px;
+    background-color: rgb(31 123 163);
+}
+ .cart-info i, .product-wrap .cart-wrap i {
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.img-wrapper .lable-block .lable4{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    top: 24px;
+    right: 7px;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    color: #212529;
+}
+.cart-wrap i:hover {
+    color: #09ceff;
+}
+ .img-wrapper .lable-block .lable3 {
+    border-radius: 100%;
+    background-color: rgba(4, 255, 246, 0.3490196078);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    padding: 9px 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    top: 14px;
+    left: 7px;
+    z-index: 1;
+    width: 25%;
+    height: 13%;
+}
+.img-fluid {
+    max-width: 61%;
+    height: 152px;
+    position: relative;
+    left: 20%;
+}
+.product-m {
+    width: 275px;
+    background-color: aqua;
+}
+/*.product-thumb-list li {
+    display: block;
+    opacity: 0.3;
+    bottom: 90px;
+    left: 0px;
+    position: absolute;
+}
+.product-thumb-list li.active {
+    opacity: 1;
+}
+
+
+*/
+ .img-wrapper .product-thumb-list li img {
+    width: 55px;
+    margin: 0px 0px 10px 0;
+}
+
+.product-m .owl-carousel {
+    margin: 0 -12px;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+.product-thumb-list {
+    position: absolute;
+    bottom: 114px;
+    left: 13px;
+}
+
+ img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 93px;
+}
+
+
+ .money{
+    color: #2b2323;
+    font-size: 14px;
+}
+
+h6{
+    color: #2b2323;
+    font-size: 14px;
+}

@@ -1,0 +1,82 @@
+<app-header-one></app-header-one>
+<!-- personal deatail section start -->
+<section class="contact-page register-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>PERSONAL DETAIL</h3>
+        <form
+          class="theme-form"
+          #userForm="ngForm"
+          (ngSubmit)="updataUserData(userForm.value)"
+        >
+          <div class="row">
+            <div class="col-md-6">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                class="form-control fs-6"
+                id="firstName"
+                placeholder="FirstName"
+                ngModel
+                #firstName="ngModel"
+                required
+                name="firstName"
+                [(ngModel)]="user.firstName"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                class="form-control fs-6"
+                id="lastName"
+                placeholder="LastName"
+                ngModel
+                #lastName="ngModel"
+                required
+                name="lastName"
+                [(ngModel)]="user.lastName" 
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="phoneNumber">Phone number</label>
+              <input
+                type="text"
+                class="form-control fs-6"
+                id="phoneNumber"
+                placeholder="Enter your number"
+                ngModel
+                #phoneNumber="ngModel"
+                required
+                name="PhoneNumber"   
+                [(ngModel)]="user.phoneNumber"    
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                class="form-control fs-6"
+                id="email"
+                placeholder="Email"
+                ngModel
+                #email="ngModel"
+                required
+                name="email" 
+                [(ngModel)]="user.email"     
+              />
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-sm btn-solid" type="submit">
+                  Save setting
+                </button>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer-one></app-footer-one>

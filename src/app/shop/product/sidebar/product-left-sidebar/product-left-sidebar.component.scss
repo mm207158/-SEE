@@ -1,0 +1,248 @@
+.collection-filter-block {
+    margin-bottom: 30px;
+    padding: 0 30px;
+    border: 2px solid #4aa7b9;
+    background-color: #ffffff;
+}
+.product-right .h4 span {
+    padding-left: 5px;
+    color: #00b6e4db;
+}
+.discolor{
+ color: #21f1f1e0;
+ padding-left: 7px;
+ font-size: 20px;
+}
+
+
+
+.product-slick {
+    display: block;
+    border: 2px solid #4aa7b9;
+    width: 76%;
+    position: relative;
+    left: 18%;
+    top: 15%;
+    margin-bottom: 40%;
+    height: 60%;
+    border-radius: 30px;
+}
+.imgpro {
+    bottom: 32%;
+    right: -60%;
+    margin-top: 100px;
+}
+
+.imgpro {
+    max-width: 208%;
+    height: auto;
+}
+.owl-carousel .owl-item img {
+    display: initial; /* or any other value that suits your needs */
+    width: auto; /* or any other value that suits your needs */
+}
+
+right .product-buttons .btn-outline {
+    padding: 7px 25px;
+}
+.product-right a {
+    text-decoration: none;
+    outline: none;
+}
+.btn-solid {
+    padding: 13px 29px;
+    color: #ffffff !important;
+    letter-spacing: 0.05em;
+    border: 2px solid #4aa7b9 !important;
+    background-image: linear-gradient(30deg, #4aa7b9 50%, transparent 50%) !important;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transition: background 300ms ease-in-out;
+    border-radius: 10px;
+
+}
+.product-right .product-description .qty-box .input-group {
+    justify-content: unset;
+    width: unset;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #060604;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:disabled {
+    background-color: #d9ecff;
+    opacity: 1;
+}
+.qty-box .input-group span button {
+    background: #ffffff !important;
+    border: 3px solid #4aa7b9;
+    height: 100%;
+}
+.qty-box .input-group button {
+    background-color: transparent;
+    border: 0;
+    color: #000000;
+    cursor: pointer;
+    padding-left: 8px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 0;
+}
+
+ .nav-tabs.nav-tabs .nav-link.active {
+    color: #4aa7b9;
+    background-color: transparent;
+    border-bottom: 2px solid #4aa7b9;
+}
+.impro img {
+    margin-bottom: 15px;
+    width: 200%;
+    position: relative;
+    left: 50%;
+}
+
+.product-box-slide{
+background-color: red;
+}
+
+.product-wrap .img-wrapper .back {
+    opacity: 0;
+    position: relative;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-100px);
+}
+
+
+.Selbutton {
+    position: relative;
+    left: 24%;
+
+}
+.section-b-space {
+    padding-bottom: 36px;
+}
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    position: relative;
+    left: 7%;
+}
+
+.img-wrapper {
+    position: relative;
+    transition: all 0.5s ease;
+    background-color: rgba(0, 230, 255, 0.1882352941);
+    border: 8px solid #479ac1;
+    top: 0px;
+    left: -4px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 292px;
+    left: 7%;
+}
+
+[class^=ti-]{
+        font-family: "themify";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        position: relative;
+        top: 0px;
+        left: 200px;
+}
+ .img-wrapper .front {
+    position: relative;
+    opacity: 1;
+    top: 9px;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.img-wrapper .back {
+    opacity: 0;
+    position: absolute;
+    backface-visibility: hidden;
+    top: 24px;
+    left: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-100px);
+}
+
+ .img-block {
+    position: relative;
+    overflow: hidden;
+    width: 221px;
+    height: 360px;
+    left: 26px;
+    top: 17px;
+}
+
+.img-wrapper .img-block .front {
+    display: block;
+    width: 100%;
+    padding-top: 46px;
+}
+
+
+.img-wrapper .btn-solid {
+    padding: 13px 29px;
+    color: #ffffff !important;
+    letter-spacing: 0.05em;
+    border: 2px solid #4aa7b9 !important;
+    background-image: linear-gradient(30deg, #4aa7b9 50%, transparent 50%) !important;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transition: background 300ms ease-in-out;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    bottom: 30px;
+}
+
+.img-wrapper .btn {
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

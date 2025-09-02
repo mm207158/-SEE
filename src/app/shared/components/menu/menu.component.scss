@@ -1,0 +1,33 @@
+.toggle-nav i {
+    font-size: 24px;
+    color: #3bbaff;
+}
+
+.cart_qty_cls {
+    position: absolute;
+    background: #28b6ea;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    top: 20%;
+    right: -8px;
+    padding: 3px 3px;
+}
+.main-menu .menu-right .icon-nav li {
+    padding-left: 20px;
+}
+.onhover-div {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-family: Lato, sans-serif;
+}
+
+.nav-menu:hover li{
+    color: rgb(51 206 190);
+}

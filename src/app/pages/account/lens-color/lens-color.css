@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: visible;
+}
+.sobhi{
+    background-color: #cdfbff;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.container{
+    background-color: #cdfbff;
+    box-shadow: 0 5px 15px rgb(71 186 176);
+    position: relative;
+    width: 50%;
+    max-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 27.5%;
+}
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 2px;
+    color: #000;
+    position: relative;
+    left: 5%;
+}
+/* .container span{
+    font-size: 12px;
+} */
+.container a{
+    position: relative;
+    color: #333;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 27px 0 15px;
+    font-size: x-large;
+    text-align: center;
+    height: 115px;
+    padding-top: 38px;
+    left: 5%;
+}
+.prodcont{
+    position: relative;
+    bottom: 53%;
+    left: 10%;
+    margin: 0px;
+    width: 40%;
+}
+.container button{
+    background-color:#176B87;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -20%;
+    height: 52px;
+}
+ button{
+    padding: 13px 29px;
+    color: #ffffff !important;
+    letter-spacing: 0.05em;
+    border: 2px solid #4aa7b9 !important;
+    background-image: linear-gradient(30deg, #4aa7b9 50%, transparent 50%) !important;
+    background-size: 850px;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    bottom: 30px;}
+
+
+.container input{
+    background-color: #eee;
+    border: #2486b7;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border-style: ridge;
+}
+
+.exit-button{    
+    position: relative;
+    left: 55%;
+    top: 1px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 17px;
+    left: 20%;
+    height: 7px;
+    background-color: #ddd;
+    border: 2px solid #958e8e;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+    width: 60%;
+ }
+  
+  .progress-item {
+    display: inline-block; /* Makes them behave like block elements for spacing */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 5px; /* Add spacing between links */
+    border: 1px solid #ddd; /* Optional border */
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Link text color */
+  }
+  
+  /* Styles for active progress bar item (triggered on click) */
+  .progress-item.active + .progress-bar {
+    width: 33.33%; /* Fills one-third of the container */
+    background-color: blue; /* Blue color for active segment */
+  }
+
+.select-container{
+    left: 0%;
+    width: 51%;
+    position: relative;
+    margin-right: 20px; /* Adjust margin between containers */
+
+}
+
+h3{
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    right: -1%;
+    margin: 37px 0px 10px 9px;
+}
+
+h4{
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 20px;
+    word-wrap: break-word;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    color: #222;
+
+}
+
+.photo{
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    width: 21%;
+    top: 139px;
+    left: 30px;
+    height: 216%;
+    border: 2px;
+}
+
+
+.phototwo{
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    vertical-align: middle;
+    position: relative;
+    width: 20%;
+    top: 140px;
+    left: 35px;
+    height: 223%;
+}
+
+.photothree{
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    vertical-align: middle;
+    position: relative;
+    width: 22%;
+    top: 139px;
+    left: 40px;
+    height: 214%;
+}
+.photofour{
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    vertical-align: middle;
+    position: relative;
+    width: 22%;
+    top: 139px;
+    left: 40px;
+    height: 214%;
+}
+.select-container li .first{
+    position: relative;
+    top: 50px;
+    height: 50px;
+    margin-bottom: 308px;
+}
+.select-container li .second{
+    position: relative;
+    bottom: 168px;
+    height: 50px;
+
+}
+.select-container li .third{
+  position: relative;
+    bottom: 78px;
+    height: 50px;
+    cursor: pointer;
+
+}
+.select-container li .forth{
+    position: relative;
+    bottom: -10px;
+    height: 50px;
+}
+
+
+
+
+img, svg {
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 80px;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+   
+
+}
+
+li a {
+    display: block;
+    border: 3px solid #0000005c;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    transition: border-color 0.3s; /* Add transition for smooth effect */
+}
+
+li a:hover {
+    border-color: #5383cb; /* Change border color on hover */
+}
+
+li{
+    width: 180%;
+    position: relative;
+    bottom: 185px;
+}
+
+.select-container .link{
+    text-decoration: underline;
+    position: relative;
+    top: 179px;
+    border: none;
+    color: #5c5ca7;
+    font-size: 16px;
+    left: -25%;
+    font-weight: bold;
+}
+ span{
+    color: black;
+    position: relative;
+    left: 69%;
+    top: 92px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.collection-filter-block {
+    margin-bottom: 30px;
+    padding: 0 30px;
+    border: 2px solid #4aa7b9;
+    background-color: #ffffff;
+}
+.product-right .h4 span {
+    padding-left: 5px;
+    color: #00b6e4db;
+}
+.discolor{
+ color: #21f1f1e0;
+ padding-left: 7px;
+ font-size: 20px;
+}
+
+
+
+.select-container::after{
+    content: ' ';
+    position: absolute;
+    top: 77%;
+    left: 12%;
+    width: 177%;
+    height: 3px;
+    background-color: #e5ebfe;
+}
+
+
+
+/**/
+
+.containerpro{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgb(71 186 176);
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    max-width: 100%;
+    min-height: 480px;
+    height: 95%;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    left: 24%;
+  
+
+}
+.containerpro p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing:0.3px;
+    margin: 20px 0;
+    color: #fff;
+}
+.containerpro span{
+    font-size: 12px;
+}
+.containerpro a{
+    color: #333;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 50px 0 48px;
+    font-size: x-large;
+    text-align: center;
+    height: 136px;
+    padding-top: 38px;
+}
+.containerpro button{
+    background-color:#176B87;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    left: -20%;
+    height: 52px;
+}
+
+.containerpro input{
+    background-color: #eee;
+    border: #2486b7;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border-style: ridge;
+}
+
+
+
+
+/**/
+
+
+
+
+
+
+
+
+/* Styles for the left side of the container */
+.col-12.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.product{
+    position: relative;
+    left: 0%;
+    bottom: 52%;
+
+}
+
+
+.absolute-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+  
+  }
+  
+  
+  .brand-logo {
+    position: relative;
+    display: inline-block;
+    BOTTOM: 68%;
+    LEFT: 3%;
+    width: 302px;
+  }
+  
+  .brand-logo img {
+    width: 130px; 
+    height: auto; 
+}
+
+.collection-filter-block {
+    margin-bottom: 30px;
+    padding: 0 30px;
+    border: 2px solid #4aa7b9;
+    background-color: #ffffff;
+}
+.product-right .h4 span {
+    padding-left: 5px;
+    color: #00b6e4db;
+}
+.discolor{
+ color: #21f1f1e0;
+ padding-left: 7px;
+ font-size: 20px;
+}
+
+.row{
+      right: 20%;
+    bottom: 60%;
+    position: relative;
+    max-width: 792px;
+    margin-right: 20px;
+}
+
+.selection-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.selection-container h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.option label {
+  font-size: 16px;
+  color: #333;
+}

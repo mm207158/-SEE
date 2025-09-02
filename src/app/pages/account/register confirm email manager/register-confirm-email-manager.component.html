@@ -1,0 +1,94 @@
+<app-header-two
+  [sticky]="true"
+  *ngIf="url != '/pages/comingsoon'"
+></app-header-two>
+
+<!-- section start -->
+<body class="sobhi">
+  <div class="container" id="container">
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-right">
+          <h1>Hey Manager!<br /></h1>
+          <p class="tex">
+            You will receve an email will provide 6-digits code if You requested
+            to resend the code You'll wait for 30 min
+          </p>
+          <button id="Register" [routerLink]="['/pages/register-manager']">
+            Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container sign-in">
+      <form #userForm="ngForm" (ngSubmit)="verifyEmail(userForm.value)">
+        <h3>Verify E-mail</h3>
+        <br /><br />
+        <div class="otp-card-inputs">
+          <input
+            type="text"
+            maxlength="1"
+            ngModel
+            #otp1="ngModel"
+            required
+            name="otp1"
+            autofocus
+          />
+          <input
+            type="text"
+            maxlength="1"
+            ngModel
+            #otp2="ngModel"
+            required
+            name="otp2"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            ngModel
+            #otp3="ngModel"
+            required
+            name="otp3"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            ngModel
+            #otp4="ngModel"
+            required
+            name="otp4"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            ngModel
+            #otp5="ngModel"
+            required
+            name="otp5"
+          />
+          <input
+            type="text"
+            maxlength="1"
+            ngModel
+            #otp6="ngModel"
+            required
+            name="otp6"
+          />
+        </div>
+        <button class="Verify" (click)="resend()">Resend</button>
+        <button
+          type="submit"
+          class="Verify"
+          id="Login"
+        >
+          Verify
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

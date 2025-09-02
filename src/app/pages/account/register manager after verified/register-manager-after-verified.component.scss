@@ -1,0 +1,10 @@
+.absolute-logo {
+    position: absolute; /* Position the logo relative to its containing block */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+  }
+  
+  .brand-logo img {
+    width: 150px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+  }

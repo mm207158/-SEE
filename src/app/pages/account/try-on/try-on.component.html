@@ -1,0 +1,58 @@
+<app-header-one></app-header-one>
+<!-- section start -->
+<body class="sobhi">
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+    
+            <form>
+                <h2>Create Account</h2>
+                <br>
+                
+                <br>
+                <span>or use your email for registration</span>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i _ngcontent-serverapp-c2626171195="" aria-hidden="true" class="fa fa-google-plus"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i _ngcontent-serverapp-c2626171195="" aria-hidden="true" class="fa fa-facebook"></i>
+                    </a>
+                </div>
+                
+            </form>
+        </div>
+    
+        <div class="form-container sign-in">
+    
+            <form>
+                
+
+               <button id="Login" (click)="navigateToTryOnPhoto()"><i class="fas fa-camera"> </i>   Upload photo</button>
+               <button id="Register" (click)="navigateToTryOnVideo()"> <i class="fas fa-video"></i> Start Video </button>
+
+                <!-- [routerLink]="['/pages/try-on-photo'] -->
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                 <img src="../../../../assets/images/Proj images/GettyImages-909908428-1-1.jpg" alt="">
+        
+                </div>
+              </div>S
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="Register">Sign Up</button>
+                </div> 
+            </div>
+        </div>
+    
+    </div> 
+    <script src="Scripts/Script.js "></script>
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>

@@ -1,0 +1,31 @@
+<div class="frame-type-filter">
+  <h4 class="title" (click)="collapse = !collapse">Filter by Frame Type</h4>
+  <ul [class.collapse]="collapse">
+    <li *ngFor="let frameType of frameTypes">
+      <input 
+        type="checkbox" 
+        [value]="frameType.id"
+        [checked]="checkedFrameType(frameType.id)"
+        id="{{ frameType.id }}"
+        class="custom-control-input"
+        (change)="appliedFrameTypeFilter($event)" />
+      <label class="custom-control-label" for="{{ frameType.id }}">{{ frameType.frameTypeName }}</label>
+    </li>
+  </ul>
+</div>
+
+<!-- <div class="gender-filter">
+  <h4 class="title" (click)="collapse = !collapse">Filter by Gender</h4>
+  <ul [class.collapse]="collapse">
+    <li *ngFor="let gender of filterbyGender">
+      <input 
+        type="checkbox" 
+        [value]="gender"
+        [checked]="checked(gender)"
+        id="{{ gender }}"
+        class="custom-control-input"
+        (change)="appliedGenderFilter($event)" />
+      <label class="custom-control-label" for="{{ gender }}">{{ gender }}</label>
+    </li>
+  </ul>
+</div> -->

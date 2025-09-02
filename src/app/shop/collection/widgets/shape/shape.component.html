@@ -1,0 +1,14 @@
+<div class="shape-filter">
+  <h4 class="title" (click)="collapse = !collapse">Filter by Shape</h4>
+  <ul [class.collapse]="collapse">
+    <li *ngFor="let shape of shapes">
+      <input 
+        type="checkbox" 
+        [value]="shape.id"
+        [checked]="checked(shape.id)"
+        id="{{ shape.id }}"
+        class="custom-control-input"
+        (change)="appliedShapeFilter($event)" />
+      <label class="custom-control-label" for="{{ shape.id }}">{{ shape.shapeName }}</label>
+    </li>
+  </ul>

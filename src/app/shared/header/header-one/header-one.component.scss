@@ -1,0 +1,106 @@
+.container {
+  max-width: 949px;
+}
+
+.top-header{
+  background-color: rgb(32 43 57);
+}
+p{
+  color: #f5f5f5;
+}
+.header-contact .text{
+  color: #f5f5f5;
+}
+.header-dropdown li{
+  color: #f5f5f5;
+}
+.header-dropdown li a i{
+  color: #f5f5f5;
+  transition: all 0.5s ease;
+}
+
+.sticky {
+  position: relative;
+  transition: top 0.3s ease; /* Add smooth transition for better user experience */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index value as needed */
+}
+.compare li{
+  color: #1654a9;
+
+}
+.sticky {
+  position: relative;
+  transition: top 0.3s ease; /* Add smooth transition for better user experience */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index value as needed */
+  height: 5%;
+}
+
+
+// .main-menu{
+//   background-color: #ed0b0b;
+//   display:inline;
+// }
+
+.absolute-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+.brand-logo {
+  position: absolute; /* Ensure relative positioning for child elements */
+  display: inline-block; /* Ensures the container only takes the width of its content */
+}
+
+.brand-logo img {
+  width: 130px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.see-text {
+position: absolute;
+top: 40%;
+left: calc(100% + 10px);
+transform: translateY(-12%);
+font-size: 50px;
+color: #5e84c2;
+font-family: sans-serif;
+font-weight: bold;
+}
+.main-menu .menu-right {
+  display: flex;
+  position: relative;
+  float: right;
+  bottom: 45%;
+  left: 0%;
+}
+
+.main-menu {
+  display: flex;
+  position: relative;
+  left: -1%;
+  width: 113%;
+}
+.main-menu .menu-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+  Right: 7%;
+}

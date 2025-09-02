@@ -1,0 +1,44 @@
+<app-header-two [sticky]="true" *ngIf="url != '/pages/comingsoon'"></app-header-two>
+
+<!-- section start -->
+<body class="sobhi">
+    <div class="container" id="container">
+        
+        
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Hey Manager!<br>Welcome To SEE </h1>
+                    <p>To keep connected with us Please Login your personal info</p>
+                    <button id="Register" [routerLink]="['/pages/register-confirm-email-manager']"> Back </button>
+                    
+                </div> 
+            </div>
+           
+        </div>
+    
+
+
+        <div class="form-container sign-in">
+    
+            <form>
+                <h3>Create Account</h3>
+                <input type="text" placeholder="Store Name">
+                <input type="text" placeholder="Business Location">
+                <input type="number" placeholder="Card Number">
+                <input type="text" placeholder="Holder Name">
+                <input type="text" placeholder="Enter a valid expiry date (MM/YY)" pattern="\d{2}/\d{2}">
+                <input type="number" placeholder="CSV">
+
+
+
+                <button class="hidden" id="Login" [routerLink]="['/pages/login']">Confirm</button>                
+            </form>
+        </div>
+    </div> 
+    <script src="Scripts/Script.js "></script>
+</body>
+
+<!--Section ends-->
+<app-footer-one></app-footer-one>
+<router-outlet></router-outlet>
